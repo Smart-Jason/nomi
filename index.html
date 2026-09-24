@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fcf8f1">
+  <meta name="description" content="Meet Nomi, an AI companion for your Windows desktop. Explore conversations, voice, memory, and local or connected AI.">
+  <title>Nomi — A little company for your desktop.</title>
+  <link rel="icon" type="image/x-icon" href="assets/pet.ico">
+  <link rel="preload" href="assets/Nunito.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+  <svg class="icon-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 3 2.5 6.5L21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5Z"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M20 11.5a8 8 0 0 1-8 8H5l-4 3 2-7a8 8 0 1 1 17-4Z"/><path d="M7 10h8M7 14h5"/></symbol>
+    <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="2" width="6" height="13" rx="3"/><path d="M5 10v2a7 7 0 0 0 14 0v-2M12 19v3m-4 0h8"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0l-1 1-1-1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></symbol>
+    <symbol id="i-window" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="15" rx="3"/><path d="M3 9h18M8 22h8m-4-3v3"/></symbol>
+    <symbol id="i-win" viewBox="0 0 24 24"><path d="M3 5.5 10.5 4v7H3Zm10-2L22 2v9h-9ZM3 13h7.5v7L3 18.5Zm10 0h9v9l-9-1.5Z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="3"/><path d="M9 1v4m6-4v4M9 19v4m6-4v4M1 9h4m-4 6h4m14-6h4m-4 6h4"/><rect x="9" y="9" width="6" height="6" rx="1"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  </defs></svg>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="wordmark" href="#" aria-label="Nomi home">nomi<span class="brand-star">✳</span></a>
+      <nav class="desktop-nav" aria-label="Main navigation" data-i18n-aria="navLabel">
+        <a href="#features" data-i18n="navFeatures">Why Nomi</a>
+        <a href="#experience" data-i18n="navExperience">A closer look</a>
+        <a href="#story" data-i18n="navStory">The project</a>
+      </nav>
+      <div class="nav-actions">
+        <div class="language-switch" role="group" aria-label="Language">
+          <button type="button" data-lang="en" aria-pressed="true">EN</button><span aria-hidden="true">/</span><button type="button" data-lang="zh" aria-pressed="false">中文</button>
+        </div>
+        <a class="button button-small" href="#experience"><span data-i18n="meet">Meet Nomi</span><svg class="icon"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section-wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="tiny-line"></span><span data-i18n="heroEyebrow">A LITTLE WARMTH FOR YOUR EVERYDAY</span></div>
+        <h1 id="hero-title"><span data-i18n="heroLine1">Your desktop.</span><br><em data-i18n="heroLine2">A little less lonely.</em></h1>
+        <p class="hero-description" data-i18n="heroDescription">Meet Nomi, your little AI companion. A friendly face to talk to, think with, and keep you company through the everyday.</p>
+        <div class="hero-actions"><a class="button" href="#experience"><svg class="icon"><use href="#i-spark"/></svg><span data-i18n="heroCta">Explore Nomi</span><svg class="icon"><use href="#i-arrow"/></svg></a><a class="text-link" href="#features" data-i18n="heroSecondary">See what she can do</a></div>
+        <div class="platform-note"><svg class="icon win-icon"><use href="#i-win"/></svg><span data-i18n="platform">Made for Windows</span><span class="note-separator">·</span><span data-i18n="projectTagline">A little warmth, every day</span></div>
+      </div>
+      <div class="hero-scene" aria-label="Nomi character illustration" data-i18n-aria="heroArtLabel">
+        <div class="scene-ring ring-one"></div><div class="scene-ring ring-two"></div>
+        <span class="scene-caption" data-i18n="helloWorld">HELLO, LITTLE WORLD.</span>
+        <span class="scene-star star-one" aria-hidden="true">✳</span><span class="scene-star star-two" aria-hidden="true">✧</span>
+        <img class="hero-portrait" src="assets/nomi.png" width="1024" height="1024" alt="Nomi, a smiling girl with cream-colored hair and a rice-themed hair clip" data-i18n-alt="nomiAlt" fetchpriority="high">
+        <div class="hello-note"><svg class="icon"><use href="#i-spark"/></svg><span data-i18n="helloNote">A little company, just for you.</span></div>
+        <div class="floating-chat"><span class="chat-avatar"><img src="assets/nomi.png" width="42" height="42" alt=""></span><div><div class="bubble-name">Nomi <span data-i18n="bubbleTime">just now</span></div><p data-i18n="heroBubble">Hey, you. How was your day? ☀</p></div><span class="chat-tail" aria-hidden="true"></span></div>
+        <div class="scene-label"><svg class="icon"><use href="#i-heart"/></svg><span data-i18n="sceneLabel">Small companion. Everyday moments.</span></div>
+      </div>
+    </section>
+
+    <div class="capability-strip section-wrap" aria-label="Key features" data-i18n-aria="featuresLabel">
+      <span><svg class="icon"><use href="#i-chat"/></svg><span data-i18n="stripChat">Conversations that feel personal</span></span>
+      <span><svg class="icon"><use href="#i-mic"/></svg><span data-i18n="stripVoice">A voice to keep you company</span></span>
+      <span><svg class="icon"><use href="#i-cpu"/></svg><span data-i18n="stripLocal">Local AI, on your terms</span></span>
+    </div>
+
+    <section id="features" class="features section-wrap section-space">
+      <div class="section-heading centered"><div class="eyebrow" data-i18n="featuresEyebrow">MORE THAN A FACE ON YOUR SCREEN</div><h2><span data-i18n="featuresTitle1">Little moments.</span> <em data-i18n="featuresTitle2">A real connection.</em></h2><p data-i18n="featuresIntro">A place for your thoughts, a familiar voice, and a companion you can make your own.</p></div>
+      <div class="feature-grid">
+        <article class="feature-card"><div class="feature-icon"><svg class="icon"><use href="#i-chat"/></svg></div><h3 data-i18n="chatTitle">Talk about your world.</h3><p data-i18n="chatDescription">Share an idea, work through a question, or just tell her about your day. Chat in English or Chinese, with image attachments when your model supports them.</p><a href="#experience" class="feature-link" data-select-tab="chat"><span data-i18n="chatLink">A little conversation</span><svg class="icon"><use href="#i-arrow"/></svg></a></article>
+        <article class="feature-card"><div class="feature-icon"><svg class="icon"><use href="#i-mic"/></svg></div><h3 data-i18n="voiceTitle">Sometimes, just say it.</h3><p data-i18n="voiceDescription">Give your keyboard a break. Speech recognition and spoken replies bring a voice to your companion, with local and online voice options.</p><a href="#experience" class="feature-link" data-select-tab="voice"><span data-i18n="voiceLink">Meet her voice</span><svg class="icon"><use href="#i-arrow"/></svg></a></article>
+        <article class="feature-card"><div class="feature-icon"><svg class="icon"><use href="#i-heart"/></svg></div><h3 data-i18n="memoryTitle">The little things matter.</h3><p data-i18n="memoryDescription">With long-term memory enabled, details can carry into later conversations. Review, edit, or delete what Nomi remembers in settings.</p><a href="#experience" class="feature-link" data-select-tab="memory"><span data-i18n="memoryLink">Make it personal</span><svg class="icon"><use href="#i-arrow"/></svg></a></article>
+      </div>
+    </section>
+
+    <section id="experience" class="experience section-space">
+      <div class="section-wrap experience-grid">
+        <div class="experience-copy"><div class="eyebrow" data-i18n="experienceEyebrow">MAKE YOURSELF AT HOME</div><h2><span data-i18n="experienceTitle1">A little window</span><br><em data-i18n="experienceTitle2">into Nomi's world.</em></h2><p data-i18n="experienceIntro">Nomi stays on your desktop. Open quick chat whenever a thought comes to mind, or settle in for a longer conversation.</p>
+          <div class="preview-tabs" role="tablist" aria-label="Explore Nomi features" aria-orientation="vertical" data-i18n-aria="tabsLabel">
+            <button class="preview-tab" id="tab-chat" role="tab" aria-selected="true" aria-controls="preview-panel" data-tab="chat"><span class="tab-number">01</span><span><strong data-i18n="tabChat">A space to talk</strong><small data-i18n="tabChatSub">Everyday thoughts, welcome here.</small></span><svg class="icon"><use href="#i-arrow"/></svg></button>
+            <button class="preview-tab" id="tab-voice" role="tab" aria-selected="false" aria-controls="preview-panel" tabindex="-1" data-tab="voice"><span class="tab-number">02</span><span><strong data-i18n="tabVoice">A familiar voice</strong><small data-i18n="tabVoiceSub">Less typing. More talking.</small></span><svg class="icon"><use href="#i-arrow"/></svg></button>
+            <button class="preview-tab" id="tab-memory" role="tab" aria-selected="false" aria-controls="preview-panel" tabindex="-1" data-tab="memory"><span class="tab-number">03</span><span><strong data-i18n="tabMemory">A little continuity</strong><small data-i18n="tabMemorySub">Your preferences, remembered.</small></span><svg class="icon"><use href="#i-arrow"/></svg></button>
+          </div>
+        </div>
+        <div class="preview-stage"><div class="app-preview"><div class="window-bar"><div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div><span>Nomi</span><svg class="icon"><use href="#i-spark"/></svg></div><div class="app-top"><img src="assets/nomi.png" width="52" height="52" alt=""><div><strong data-i18n="previewName">Nomi</strong><span data-i18n="previewTagline">Your little desktop companion</span></div><svg class="icon"><use href="#i-heart"/></svg></div><div id="preview-panel" role="tabpanel" aria-labelledby="tab-chat" tabindex="0"></div></div><p class="preview-caption"><svg class="icon"><use href="#i-window"/></svg><span data-i18n="previewCaption">Illustrative interface preview · Sample content</span></p></div>
+      </div>
+    </section>
+
+    <section class="your-way section-wrap section-space" id="your-way">
+      <div class="your-way-art"><img id="nomi-world-image" src="assets/nomi-world.png" width="1672" height="941" alt="Nomi in a warm, sunlit room with rice dumplings" data-i18n-alt="worldAlt" loading="lazy"><div class="art-caption"><span data-i18n="artCaption">A softer corner of your digital world.</span><svg class="icon"><use href="#i-spark"/></svg></div></div>
+      <div class="your-way-copy"><div class="eyebrow" data-i18n="yourWayEyebrow">YOUR COMPANION, YOUR CHOICE</div><h2><span data-i18n="yourWayTitle1">Feels like Nomi.</span><br><em data-i18n="yourWayTitle2">Fits like you.</em></h2><p data-i18n="yourWayIntro">Choose how she looks, how she sounds, and the AI behind the conversation.</p><ul class="choice-list"><li><svg class="icon"><use href="#i-check"/></svg><div><strong data-i18n="choiceLocal">Run a language model locally</strong><span data-i18n="choiceLocalSub">Use llama.cpp on your Windows PC, or connect your preferred online provider.</span></div></li><li><svg class="icon"><use href="#i-check"/></svg><div><strong data-i18n="choicePersonality">Make the personality your own</strong><span data-i18n="choicePersonalitySub">Pick a personality preset or create your own persona, then customize her name, voice, appearance, and theme.</span></div></li><li><svg class="icon"><use href="#i-check"/></svg><div><strong data-i18n="choiceLanguage">English or 中文</strong><span data-i18n="choiceLanguageSub">Switch the app language and feel right at home.</span></div></li></ul></div>
+    </section>
+
+    <section id="story" class="project-section section-space"><div class="section-wrap"><div class="project-top"><div><div class="eyebrow" data-i18n="storyEyebrow">A LITTLE WARMTH, THOUGHTFULLY BUILT</div><h2><span data-i18n="storyTitle1">A warm idea.</span><br><em data-i18n="storyTitle2">Real engineering underneath.</em></h2></div><p data-i18n="storyIntro">Nomi brings a desktop interface, language models, speech, and memory into one companion. The work is in making those pieces live together.</p></div><div class="engineering-grid"><article><span class="engineering-number">01 / DESKTOP</span><h3 data-i18n="engineeringDesktop">A companion beyond the browser</h3><p data-i18n="engineeringDesktopSub">An Electron app with a transparent pet window, separate chat and settings surfaces, and communication across windows.</p><span class="tech-label">Electron · JavaScript · IPC</span></article><article><span class="engineering-number">02 / INTELLIGENCE</span><h3 data-i18n="engineeringAI">One conversation, different engines</h3><p data-i18n="engineeringAISub">A shared chat flow routes requests to local or online models, adds relevant memories, and coordinates spoken replies.</p><span class="tech-label">llama.cpp · Python · STT / TTS</span></article><article><span class="engineering-number">03 / EXPERIENCE</span><h3 data-i18n="engineeringExperience">Care in the details</h3><p data-i18n="engineeringExperienceSub">First-launch resource setup, configurable voices, and language-aware reply segmentation connect the technical pieces to everyday use.</p><span class="tech-label" data-i18n="engineeringExperienceTech">Resource management · i18n</span></article></div></div></section>
+
+    <section id="faq" class="faq-section section-wrap section-space"><div class="section-heading"><div class="eyebrow" data-i18n="faqEyebrow">A FEW THINGS TO KNOW</div><h2 data-i18n="faqTitle">Hello, questions.</h2></div><div class="faq-list"><details><summary><span data-i18n="faq1q">Can I download Nomi here?</span><svg class="icon"><use href="#i-plus"/></svg></summary><p data-i18n="faq1a">This is Nomi's project showcase. A public installer is not offered on this page yet. You can explore the feature preview above without installing anything.</p></details><details><summary><span data-i18n="faq2q">Which platforms does Nomi support?</span><svg class="icon"><use href="#i-plus"/></svg></summary><p data-i18n="faq2a">The desktop app currently supports Windows. This website can be viewed on both desktop and mobile browsers.</p></details><details><summary><span data-i18n="faq3q">Does everything run offline?</span><svg class="icon"><use href="#i-plus"/></svg></summary><p data-i18n="faq3a">Nomi supports local language models through llama.cpp. Offline use depends on the models and voice services you choose, with resources downloaded beforehand. Online AI providers and online voice services need an internet connection.</p></details><details><summary><span data-i18n="faq4q">Is Nomi a paid product?</span><svg class="icon"><use href="#i-plus"/></svg></summary><p data-i18n="faq4a">Nomi is intended to be free to use. If you choose an external AI API, that provider may charge for usage. Local model performance depends on your hardware.</p></details></div></section>
+
+    <section class="closing section-wrap"><img src="assets/nomi.png" width="110" height="110" alt="" loading="lazy"><div><div class="eyebrow" data-i18n="closingEyebrow">A LITTLE COMPANY GOES A LONG WAY</div><h2 data-i18n="closingTitle">Make a little room for Nomi.</h2></div><a class="button" href="#experience"><span data-i18n="closingCta">Take a closer look</span><svg class="icon"><use href="#i-arrow"/></svg></a></section>
+  </main>
+  <footer class="site-footer section-wrap"><a class="wordmark" href="#" aria-label="Nomi home">nomi<span class="brand-star">✳</span></a><p data-i18n="footerCredit">Nomi. Made with a little warmth.</p><a href="#faq" data-i18n="footerFaq">Questions & answers</a></footer>
+</body>
+</html>
